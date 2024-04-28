@@ -1,5 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 p{
-    background-color: bisque;
+    /* background-color: bisque; */
 }
 main{
     /* background-color: burlywood; */
@@ -85,3 +90,68 @@ h2{
 h2 .author{
     white-space: nowrap; /*it will make this part as a whole it will not split between top and bottom all text will show together.*/
 }
+body{
+    min-height: 200vh;
+}
+.outer-container{
+    border:3px dashed #000;
+    width: 40vw;
+    height: 50vw;
+    margin: 40px auto;
+    position:relative;
+}
+
+.inner-container{
+    border:3px solid #00f;
+    width: 20vw;
+    height: 30vw;
+    margin: 50px auto;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    padding: 1rem;
+}
+.absolute{
+    background-color: blue;
+    position: absolute; 
+    /* static  - default value
+       absolute --> will required top ,left,right/bottom values
+       it will position the element relative to the parent element.
+       if parent is not set relative it will use bowser window
+    */
+    top:0;
+    left: 0;
+    z-index: 1;
+    /*it will put the element on top of overlapping element.*/
+}
+
+.relative{
+    background-color: #f00;
+    position: relative;
+    /*relative will always be positioned relative to the parent container.*/
+    top: 190px;
+    left: 200px;
+}
+
+.fixed{
+    background-color: green;
+    position: fixed;
+    z-index: 1;
+}
+
+.sticky{
+    position:sticky;
+    background-color: #000;
+    top:0; 
+    /*sticky will stay till a certain position and then it will move out of the page. like above when we scroll up it will stay until it crosses the top position.*/
+}
+
+/*
+html{
+
+    scroll-behaviour:smooth;
+    it will make the scroll smooth and not quick.
+}
+*/
