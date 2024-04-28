@@ -5,3 +5,10 @@ main{
     background-color: burlywood;
     width: 50%; 
 }
+.opp{
+    background-color: black;
+    color:whitesmoke;  
+    padding: 1rem; 
+    display: inline-block;/*now we can apply margin ,height and padding also will nor overlap*/
+}
+/*we cannot apply margin to inline element nor height . Padding can be applied.But padding will overlap other elements.*/
