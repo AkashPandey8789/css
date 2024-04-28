@@ -54,10 +54,28 @@ p{
 }
 
 section{
-    background-color: aqua;
-    border:1px solid #333;
+    /* background-color: aqua;
+    border:1px solid #333; */
     /* overflow:auto;  */
     /*overflow:auto is legacy code used to make the section cover the whole part.*/
-    display: flow-root;
+    /* display: flow-root; */
     /*display: flow-root will cover the whole section irrespective of the text content.*/
+}
+
+.columns{
+    /* column-count: 4;
+    column-width: 250px; */
+ /*above code's shorthand we can see below.*/
+    columns:4 250px;
+    column-rule: 3px solid #333; /*to separate columns.*/
+    column-gap: 5rem;
+}
+
+.columns p{
+    margin-top: 0;
+}
+h2{
+    padding: 2rem;
+    background-color: aliceblue;
+    break-inside: avoid;
 }
