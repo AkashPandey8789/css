@@ -75,7 +75,13 @@ section{
     margin-top: 0;
 }
 h2{
-    padding: 2rem;
+    /* padding: 2rem;
     background-color: aliceblue;
-    break-inside: avoid;
+    break-inside: avoid; */
+    column-span: all;
+    text-align: center;
+}
+
+h2 .author{
+    white-space: nowrap; /*it will make this part as a whole it will not split between top and bottom all text will show together.*/
 }
