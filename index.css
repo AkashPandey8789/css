@@ -2,7 +2,7 @@ p{
     background-color: bisque;
 }
 main{
-    background-color: burlywood;
+    /* background-color: burlywood; */
 /* width: 50%;  */
 }
 .opp{
@@ -32,4 +32,32 @@ li a{
 
 li a:hover{
     text-decoration:underline;
+}
+
+.block{
+    width: 5vw;
+    height: 5vw;
+    background-color: black;
+    color:white;
+    padding: 1rem;
+}
+.left{
+    float: left;
+    margin-right: 1%;
+}
+p{
+    /* margin-left: 10%; it will set margin from left and not from the block element end  */
+}
+.right{
+    float:right;
+    margin-left: 1%;
+}
+
+section{
+    background-color: aqua;
+    border:1px solid #333;
+    /* overflow:auto;  */
+    /*overflow:auto is legacy code used to make the section cover the whole part.*/
+    display: flow-root;
+    /*display: flow-root will cover the whole section irrespective of the text content.*/
 }
